@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital@1&family=Teko&display=swap');
+
+
+*    {
+        box-sizing: border-box;
+}
+
+body {
+        display: flex;
+        background-image: url('./images/about.jpg');
+        background-size: cover;
+        background-position: center center;
+        margin: 0;
+        font-family: 'Expletus Sans', cursive;
+        min-height: 100vh; 
+}
+
+header {
+        display: flex;
+        background-color: black;
+        font-family: 'Teko', sans-serif;
+        justify-content: space-between;
+        padding: 1.2rem;
+        width: 150px;
+
+}
+
+header ul {
+        padding: 0;
+        list-style-type: none;
+}
+
+header a {
+        color: white;
+        display: inline-block;
+        font-size: 1.5rem;
+        text-decoration: none;
+        margin: 0.5rem;
+}
+
+main {
+        color: white;    /*aca van los estilos del titulo visit the space*/
+        font-size: 2.2rem;
+        padding: 3rem;
+}
+
+main h1 {
+        margin: 0; /*subo el h1 arriba del main*/
+}
+
+main h3 {
+        margin: 0;
+        letter-spacing: 10px;
+}
+
+footer {
+        margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+
+body { 
+        flex-direction: column-reverse;  /*se baja la columna al revés*/
+        justify-content: space-between; /*me dej aseparado arriba los H del aside, y se ve bien el bg al fondo*/
+}
+
+main {
+        min-height: 60vh;
+}
+
+header {
+        height: auto;
+        width:100%
+}
+
+header ul {
+        display: flex;
+        flex-wrap: wrap;
+}
+}
