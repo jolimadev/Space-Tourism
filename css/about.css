@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital@1&family=Teko&display=swap');
+
+
+*    {
+        box-sizing: border-box;
+}
+
+body {
+        display: flex;
+        background-image: url('./images/about.jpg');
+        background-size: cover;
+        background-position: center center;
+        margin: 0;
+        font-family: 'Expletus Sans', cursive;
+        min-height: 100vh; 
+}
+
+
+.encabezado {     /*para este project use la metodologia flexbox en css*/
+        
+        flex-direction: row; /* me queda el encabezado en linea*/
+        align-items: center; /*ahi alinee mi encabezado con el logo*/
+        justify-content: space-around; /* justifica el contenido de forma más generalizada, elegi arund xq no queria tan espaciado como between*/
+        padding: 24px;
+}   
+
+.encabezado-logo {
+        height: 80px;
+        width: 80px;
+}
+.encabezado-menu {
+        display: flex; /* se puede realizar un flex dentro del navegacion*/
+        gap: 30px; /*esto es para distanciar los items del logo, se usa gap xq se aplica en el row anterior*/
+}
+.encabezado-menu-item {
+        color: #fff2e7;
+        font-weight: 400 ;
+        font-size: 1.5rem;
+}
+
+main {
+        color: white;    /*aca van los estilos del titulo visit the space*/
+        font-size: 2.2rem;
+        padding: 3rem;
+}
+
+main h1 {
+        margin: 0; /*subo el h1 arriba del main*/
+}
+
+.contenido-terciario {
+        display: flex;
+        flex-direction: column; /*en modo de columna*/
+        align-items: center;
+        gap: 24px; /*espaciado entre cada item*/
+        margin-top: 48px;
+        
+}
+.contenido-titulo-terciario{
+        /*LA LINEA ES MAS CORTA PORQUE ACOMPAÑA AL H3 Y TIENE MENOR RANGO= X LO TANTO ES MÁS CHICA/CORTA*/
+        padding-top: 48px; /*espacio de la linea del subtitulo con la linea blanca*/
+        font-weight: 400;
+        font-size: 2.5rem;
+        margin: 0;
+        letter-spacing: 10px;
+        color: #fff2e7;
+        margin-bottom: 16px; /*espacio entre subtitulo y los <p>*/
+}
+.parrafo-secundario {
+        font-weight: 300;
+        font-size: 2rem;
+        color: #fff2e7;
+}
+
+
+@media screen and (max-width: 768px) {
+
+body { 
+        flex-direction: column-reverse;  /*se baja la columna al revés*/
+        justify-content: space-between; /*me dej aseparado arriba los H del aside, y se ve bien el bg al fondo*/
+}
+
+main {
+        min-height: 60vh;
+}
+
+.encabezado {
+        height: auto;
+        width:100%
+}
+
+.encabezado-menu {
+        display: flex;
+        flex-wrap: wrap;
+}
+}

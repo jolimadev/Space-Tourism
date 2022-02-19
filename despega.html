@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/despega.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <title>Turismo Espacial</title>
+</head>
+<body>
+    
+    <header class="encabezado">
+     
+        
+    </header>
+    <div class="countdown-container">
+        <div class="countdown-el days-c">  <!--aca esta el contenedor de los dias y arriba el general, podría usar section(?iknow)-->
+            <p class="big-text" id="days">0</p>  <!--tageamos el id para poder llamrlo despues con js y se declara un id, ya que un id no se puede repetir, solo existirá un único id por elemento.-->
+            <span>days</span>
+        </div>
+    
+        <div class="countdown-el hours-c">  <!--aca esta el contenedor de las horas y arriba el general, podría usar section(?iknow)-->
+            <p class="big-text" id="hours">0</p>  <!--tageamos el id para poder llamrlo despues con js y colocar las horas-->
+            <span>hours</span>
+        </div>
+    
+        <div class="countdown-el mins-c">  <!--aca esta el contenedor de los minutos y arriba el general, podría usar section(?iknow)-->
+            <p class="big-text" id="mins">0</p>  <!--tageamos el id para poder llamrlo despues con js y colocar los mins-->
+            <span>mins</span>
+        </div>
+    
+        <div class="countdown-el seconds-c">  <!--aca esta el contenedor de los segundos y arriba el general, podría usar section(?iknow)-->
+            <p class="big-text" id="seconds">0</p>  <!--tageamos el id para poder llamrlo despues con js y colocar los sec-->
+            <span>seconds</span>
+        </div>
+    </div>
+
+    <form action="https://formsubmit.co/juanszolima@gmail.com" method="POST" class="contact__form grid">
+        <div class="contact__inputs grid">
+            <div class="contact__content">
+                <label for="name" class="contact__label">Name</label>
+                <input type="text" name="name" class="contact__input" required>
+            </div>
+
+            <div class="contact__content">
+                <label for="email" class="contact__label">Email</label>
+                <input type="email" name="email" class="contact__input" required>
+            </div>
+        </div>
+
+        <div class="contact__content">
+            <label for="project-contact" class="contact__label">Subject</label>
+            <input type="text" name="Project" class="contact__input">
+        </div>
+
+        <div class="contact__content">
+            <label for="message-contact" class="contact__label">Message</label>
+            <textarea name="message" cols="0" rows="7" id="message-contact" class="contact__input" required></textarea>
+        </div>
+        
+        <div>
+            <button type="submit" class="button button--flex"> Send Message  <i class="uil uil-message button__icon"></i></button>
+           
+        </div>
+    </form>
+
+
+
+    <script src="./countdown-timer.js"></script>
+
+    </body>
+    </html>
