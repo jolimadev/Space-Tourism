@@ -10,10 +10,12 @@
 </head>
 <body>
     
-    <header class="encabezado">
-     
-        
+    <a class="back" href="./about.html">Volver</a>
+
+    <header>
+        <h1>Próximo Despegue: </h1>
     </header>
+    
     <div class="countdown-container">
         <div class="countdown-el days-c">  <!--aca esta el contenedor de los dias y arriba el general, podría usar section(?iknow)-->
             <p class="big-text" id="days">0</p>  <!--tageamos el id para poder llamrlo despues con js y se declara un id, ya que un id no se puede repetir, solo existirá un único id por elemento.-->
@@ -36,36 +38,54 @@
         </div>
     </div>
 
-    <form action="https://formsubmit.co/juanszolima@gmail.com" method="POST" class="contact__form grid">
-        <div class="contact__inputs grid">
-            <div class="contact__content">
-                <label for="name" class="contact__label">Name</label>
-                <input type="text" name="name" class="contact__input" required>
-            </div>
-
-            <div class="contact__content">
-                <label for="email" class="contact__label">Email</label>
-                <input type="email" name="email" class="contact__input" required>
-            </div>
-        </div>
-
-        <div class="contact__content">
-            <label for="project-contact" class="contact__label">Subject</label>
-            <input type="text" name="Project" class="contact__input">
-        </div>
-
-        <div class="contact__content">
-            <label for="message-contact" class="contact__label">Message</label>
-            <textarea name="message" cols="0" rows="7" id="message-contact" class="contact__input" required></textarea>
-        </div>
+    <section>
+        <article class="articulo-form">
+            <div> <h1 class="titulo-article"> Participa por un lugar 🚀: </h1></div> 
+        </article>
+            <div class="contact_form">
+            <div class="formulario">      
+            <h3> Qué es lo que más te atrapa sobre el espacio?</h3>
+    
+            
+            <form id="contacto" action="https://formsubmit.co/juanszolima@gmail.com" method="POST">
         
-        <div>
-            <button type="submit" class="button button--flex"> Send Message  <i class="uil uil-message button__icon"></i></button>
-           
-        </div>
-    </form>
-
-
+                <p>
+                    <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                    </label>
+                        <input class="input-gral" type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                    </p>
+                <p>
+                    <label for="email" class="colocar_email">Email
+                        <span class="obligatorio">*</span>
+                    </label>
+                        <input class="input-gral" type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                    </p>
+                
+                    <p>
+                    <label for="telefone" class="colocar_telefono">Teléfono
+                    </label>
+                        <input class="input-gral" type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                    </p>    
+                
+                    <p>
+                    
+                    <p>
+                    <label for="mensaje" class="colocar_mensaje">Mensaje
+                        <span class="obligatorio">*</span>
+                    </label>                     
+                                        <textarea class="text-area" name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                    </p>                    
+                
+                    <button class="boton-form"type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+    
+                    <p class="aviso">
+                      <span class="obligatorio"> * </span>los campos son obligatorios.
+                    </p>          
+                
+            </form>
+        
+    </section>
 
     <script src="./countdown-timer.js"></script>
 

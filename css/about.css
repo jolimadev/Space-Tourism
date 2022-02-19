@@ -11,39 +11,50 @@ body {
         background-size: cover;
         background-position: center center;
         margin: 0;
+        padding: 0;
         font-family: 'Expletus Sans', cursive;
         min-height: 100vh; 
 }
 
 
-.encabezado {     /*para este project use la metodologia flexbox en css*/
-        
-        flex-direction: row; /* me queda el encabezado en linea*/
-        align-items: center; /*ahi alinee mi encabezado con el logo*/
-        justify-content: space-around; /* justifica el contenido de forma más generalizada, elegi arund xq no queria tan espaciado como between*/
-        padding: 24px;
-}   
+aside {
+        display: flex;
+        background-color: black;
+        flex-direction: column;
+        font-family: 'Teko', sans-serif;
+        justify-content:space-between;
+        padding: 1rem;
+        width: 150px;
+       
+}
 
-.encabezado-logo {
-        height: 80px;
-        width: 80px;
+aside ul {
+        padding: 0;
+        list-style-type: none;
 }
-.encabezado-menu {
-        display: flex; /* se puede realizar un flex dentro del navegacion*/
-        gap: 30px; /*esto es para distanciar los items del logo, se usa gap xq se aplica en el row anterior*/
-}
-.encabezado-menu-item {
-        color: #fff2e7;
-        font-weight: 400 ;
+
+aside a {
+        color: white;
+        display: inline-block;
         font-size: 1.5rem;
+        text-decoration: none;
+        margin: 1rem;
 }
 
+
+
+    
+/*MAIN*/
 main {
         color: white;    /*aca van los estilos del titulo visit the space*/
         font-size: 2.2rem;
         padding: 3rem;
 }
-
+.logo {
+        
+        height: 100px;
+        width: 100px;
+}
 main h1 {
         margin: 0; /*subo el h1 arriba del main*/
 }
