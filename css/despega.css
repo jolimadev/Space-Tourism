@@ -17,6 +17,11 @@ body {
         min-height: 100vh; 
 }
 
+header {
+    padding: 40px;
+}
+
+
 .back {
     color: #d1d1d1;
     text-decoration: none;
@@ -61,12 +66,14 @@ h1{
     flex-direction: column; /*en modo de columna*/
     align-items: center;
     margin-top: 48px;
+
 }
 .titulo-article{
     font-family: 'Expletus Sans', cursive;
     font-weight: 600;
     font-size: 3rem;
     color: #d1d1d1;
+    padding: 40px;
 }
 
 .contact_form{  

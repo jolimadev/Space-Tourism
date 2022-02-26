@@ -24,11 +24,13 @@ aside {
         padding: 1.2rem;
         width: 150px;
         height: 100vh;
+        
 }
 
 aside ul {
         padding: 0;
         list-style-type: none;
+        
 }
 
 aside a {
@@ -38,7 +40,10 @@ aside a {
         text-decoration: none;
         margin: 0.5rem;
 }
-
+aside a:hover{
+        background: white;
+        color: black;
+}
 /* From cssbuttons.io by @adamgiebl */
 button {
         display: flex;
